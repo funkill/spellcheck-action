@@ -1,0 +1,27 @@
+name: "Spellchecking"
+description: 'Spellchecking for various resources'
+
+inputs:
+  lang:
+    description: 'Sources language (default: en)'
+    required: false
+    default: 'en'
+  files_pattern:
+    description: 'Pattern for checking for find (default: *.md)'
+    required: false
+    deafult: '*.md'
+  sources:
+    description: 'Sources directiry (default: .)'
+    required: false
+    default: '.'
+  dictionary:
+    description: 'Additional dictionary'
+    required: false
+    default: 'dictionary.txt'
+  only_changed:
+    description: 'Run spellchecking only for files from last commit'
+    requried: false
+    default: false
+runs:
+  using: docker
+  image: Dockerfile
