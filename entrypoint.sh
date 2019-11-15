@@ -3,7 +3,7 @@
 set -euo pipefail
 
 dict_filename=${INPUT_DICTIONARY}
-sources=${INPUT_SOURCE_DIR}
+sources=${INPUT_SOURCES}
 files_pattern=${INPUT_FILES_PATTERN}
 lang=${INPUT_LANG}
 
