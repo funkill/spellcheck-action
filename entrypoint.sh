@@ -2,8 +2,10 @@
 
 set -euo pipefail
 
-dict_filename=${INPUT_DICTIONARY}
-sources=${INPUT_SOURCES}
+repo_dir=
+
+dict_filename=${GITHUB_WORKSPACE}/${INPUT_DICTIONARY}
+sources=${GITHUB_WORKSPACE}/${INPUT_SOURCES}
 files_pattern=${INPUT_FILES_PATTERN}
 lang=${INPUT_LANG}
 
