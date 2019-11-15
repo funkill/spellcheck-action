@@ -15,6 +15,6 @@ if [ ! -f $dict_filename ]; then
 fi
 # aspell repeatedly modifies the personal dictionary for some reason,
 # so we should use a copy of our dictionary.
-find $sources -type f -name $files_pattern | xargs -L 1 aspell --lang $lang --ignore 3 --dont-backup --personal="$dict_filename" check
+find $sources -type f -name $files_pattern | xargs -r -L 1 aspell --lang $lang --ignore 3 --dont-backup --personal="$dict_filename" check
 
 #
