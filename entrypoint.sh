@@ -2,10 +2,10 @@
 
 set -euo pipefail
 
-dict_filename=${INPUTS_DICTIONARY}
-sources=${INPUTS_SOURCE_DIR}
-files_pattern=${INPUTS_FILES_PATTERN}
-lang=${INPUTS_LANG}
+dict_filename=${INPUT_DICTIONARY}
+sources=${INPUT_SOURCE_DIR}
+files_pattern=${INPUT_FILES_PATTERN}
+lang=${INPUT_LANG}
 
 
 if [ ! -f $dict_filename ]; then
