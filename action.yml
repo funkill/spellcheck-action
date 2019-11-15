@@ -17,7 +17,7 @@ inputs:
   dictionary:
     description: 'Additional dictionary'
     required: false
-    default: ''
+    default: 'dictionary.txt'
 
 runs:
   using: docker
